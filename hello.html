@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yashwanth | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { scroll-behavior: smooth; }
+    section { padding: 80px 0; }
+    .navbar-brand { font-weight: bold; font-size: 1.5rem; }
+    .yashwanth {
+      background: linear-gradient(135deg, #0078ff, #00c6ff);
+      color: white;
+      text-align: center;   
+      padding: 120px 20px;
+    }
+    .img {
+    float: right;
+    width: 250px;           
+    border-radius: 50%;     
+    animation: slideIn 1.5s ease-in-out;
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.move-card {
+    animation: slideCard 5s ease-in-out infinite;
+}
+.move-card:hover {
+    animation-play-state: paused;
+}
+@keyframes slideCard {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(40px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.scroll-title {
+    display: inline-block;
+    animation: titleScroll 6s linear infinite;
+}
+
+.skill-box:hover .scroll-title {
+    animation-play-state: paused;
+}
+@keyframes titleScroll {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(25px); }
+    100% { transform: translateX(0); }
+}
+.skill-item {
+    cursor: pointer;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+.skill-level {
+    font-size: 14px;
+    padding: 5px 0;
+    color: #444;
+}
+    footer {
+      background-color:blue;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+@media (max-width: 600px) {
+  .text {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+@media (min-width: 600px) and (max-width: 992px) {
+  .text {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 992px) {
+  .text {
+    font-size: 1.4rem;
+  }
+}
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">VADLAKONDA YASHWANTH</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+           <li class="nav-item"><a class="nav-link" href="visting.html">visting card</a></li>
+           <li class="nav-item"><a class="nav-link" href="#aboutus">aboutus</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="home" class="yashwanth">
+    <img src="ji.jpg" alt="Yashwanth" class="img">
+    <h1>Hi, I'm Yashwanth 👋</h1>
+    <h4>Web Developer | Designer | Student</h4>
+    <p>I create responsive and visually appealing websites using HTML, CSS, and Bootstrap.</p>
+    <a href="#projects" class="btn btn-light mt-3">View My Work</a>
+  </section>
+  <section id="about" class="container text-center">
+    <h2 class="sai">About Me</h2>
+    <p class="yash">
+      I'm a passionate web developer focused on building creative, responsive, and user-friendly designs.
+      I enjoy learning new technologies and continuously improving my skills.
+    </p>
+  </section>
+  <section id="projects" class="card">
+    <div class="container">
+      <h2 class="text-primary text-center mb-5">Projects</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card shadow move-card">
+            <img src="yyy.png" class="card-img-top" alt="Project 1">
+            <div class="card-body text-center">
+              <h5 class="card-title">Portfolio Website</h5>
+              <p class="card-text">A responsive portfolio built with  HTML/CSS and Bootstrap.</p>
+              <a href="index.html" class="btn btn-primary btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow move-card">
+            <img src="k.png" class="card-img-top" alt="Project 2">
+            <div class="card-body text-center">
+              <h5 class="card-title">Image Gallery</h5>
+              <p class="card-text">A modern Image gallery.</p>
+              <a href="flexbox gallery.html" class="btn btn-primary btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow move-card">
+            <img src="l.png" class="card-img-top" alt="Project 3">
+            <div class="card-body text-center">
+              <h5 class="card-title">Flex box</h5>
+    <p class="card-text">Our Indain flag .</p>
+              <a href="flexbox gallery.html" class="btn btn-primary btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <section id="skills" class="container text-center mt-5">
+    <h2 class="text-primary mb-4">Skills</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-3 col-8 mb-3">
+            <div class="skill-box border rounded p-3 shadow-sm">
+                
+                <h5 class="scroll-title">Soft Skills</h5>
+
+                <p class="skill-item" data-bs-toggle="collapse" data-bs-target="#team">Teamwork</p>
+                <div id="team" class="collapse skill-level"> Intermediate</div>
+
+                <p class="skill-item" data-bs-toggle="collapse" data-bs-target="#problem">Problem Solving</p>
+                <div id="problem" class="collapse skill-level"> Advanced</div>
+
+                <p class="skill-item" data-bs-toggle="collapse" data-bs-target="#time">Time Management</p>
+                <div id="time" class="collapse skill-level"> Intermediate</div>
+            </div>
+        </div>
+        <div class="col-md-3 col-8 mb-3">
+            <div class="skill-box border rounded p-3 shadow-sm">
+
+                <h5 class="scroll-title">Programming Skills</h5>
+
+                <p class="skill-item" data-bs-toggle="collapse" data-bs-target="#html">HTML / CSS</p>
+                <div id="html" class="collapse skill-level"> Intermediate</div>
+
+                <p class="skill-item" data-bs-toggle="collapse" data-bs-target="#boot">Bootstrap</p>
+                <div id="boot" class="collapse skill-level"> Intermediate</div>
+
+                <p class="skill-item" data-bs-toggle="collapse" data-bs-target="#c">C Language</p>
+                <div id="c" class="collapse skill-level">Advance</div>
+
+                <p class="skill-item" data-bs-toggle="collapse" data-bs-target="#python">Python</p>
+                <div id="python" class="collapse skill-level"> Intermediate</div>
+            </div>
+        </div>
+        <div class="col-md-3 col-8 mb-3">
+            <div class="skill-box border rounded p-3 shadow-sm">
+
+                <h5 class="scroll-title">Communication Skills</h5>
+
+                <p class="skill-item" data-bs-toggle="collapse" data-bs-target="#eng">English</p>
+                <div id="eng" class="collapse skill-level"> Advanced</div>
+
+                <p class="skill-item" data-bs-toggle="collapse" data-bs-target="#presentation">Presentation</p>
+                <div id="presentation" class="collapse skill-level"> Intermediate</div>
+
+                <p class="skill-item" data-bs-toggle="collapse" data-bs-target="#public">Public Speaking</p>
+                <div id="public" class="collapse skill-level"> Beginner</div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="container my-5" id="contact">
+  <h2 class="text-center mb-4">Contact Me</h2>
+  <form action="https://formspree.io/f/your-form-id" method="POST" class="row g-3">
+    <div class="col-md-6">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    <div class="col-md-6">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" name="_replyto" required>
+    </div>
+    <div class="col-12">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+    </div>
+    <div class="col-12 text-center">
+      <button type="submit" class="btn btn-primary px-4">Send Message</button>
+    </div>
+  </form>
+</section>
+<section class="container my-5" id="aboutus">
+  <h2 class="text-center mb-4">aboutus</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">K. Ram shankar</h5>
+          <p class="card-text">I Helped in Creating Skills Section and I Created my own <a href="https://thunderooops.github.io/My_Portfolio/">Portfolio</a> </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">V. Yashwanth</h5>
+          <p class="card-text">I create responsive and visually appealing websites using HTML, CSS, and Bootstrap and i also added cards to display our projects</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Mohith Kumar</h5>
+          <p class="card-text">I Helped in Creating Nav bar and Contact me and I Created my own <a href="https://mohith-29.github.io/myproject11/">Portfolio</a>.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+  <footer>
+    <p>&copy; 2025 Yashwanth | All Rights Reserved</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

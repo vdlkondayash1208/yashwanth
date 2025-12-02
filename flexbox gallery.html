@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Gallery</title>
+    <style>
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.gallery-title {
+    text-align: center;
+    margin: 30px 0;
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.column img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 15px;
+    border: 2px solid #00ffcc;
+    box-shadow: 0 0 15px #00ffcc;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+.column img:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 0 25px #00ffcc, 0 0 50px #00ffcc;
+}
+@media (max-width: 900px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}       </style>
+</head>
+<body>
+    <h1 class="gallery-title">My Project Gallery</h1>
+    <div class="gallery">
+        <div class="column">
+            <img src="project/1.jpg" alt="Project 1">
+            <img src="project/2.jpg" alt="Project 2">
+            <img src="project/3.jpeg" alt="Project 3">
+        </div>
+        <div class="column">
+            <img src="project/4.jpg" alt="Project 4">
+            <img src="project/5.jpg" alt="Project 5">
+            <img src="project/6.jpg" alt="Project 6">
+        </div>
+        <div class="column">
+            <img src="project/7.jpg" alt="Project 7">
+            <img src="project/8.jpg" alt="Project 8">
+            <img src="project/9.jpg" alt="Project 9">
+        </div>
+    </div>
+</body>
+</html>
